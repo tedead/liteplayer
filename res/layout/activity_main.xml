@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:id="@+id/mainBanner"
+   			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+			  
+	<TableLayout android:layout_width="fill_parent"
+    			 android:layout_height="wrap_content"
+    			 android:stretchColumns="*">
+    
+    <TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="*">
+        
+    	<TableRow
+        	android:id="@+id/banner"
+			android:layout_span="2">
+        
+    	</TableRow>
+    	
+    	<TableRow android:layout_width="fill_parent">
+    	    <LinearLayout
+    		  android:id="@+id/btnLayout"
+   			  android:orientation="horizontal"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:gravity="center">
+			  
+	    	    <Button
+			        android:id="@+id/savePL"
+			        android:layout_width="150dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/btn_save_PL"
+			        android:visibility="gone"> 
+	    	    </Button>
+	    	    
+	    	   	<Button
+			        android:id="@+id/cancelPL"
+			        android:layout_width="150dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/btn_cancel_PL"
+			        android:visibility="gone"> 
+	    	    </Button>
+    	    
+    	    </LinearLayout>
+        
+    	</TableRow>
+    
+    </TableLayout>
+    
+    </TableLayout>
+  	
+	<TextView
+	 	android:id="@+id/path"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+    />
+
+	<ListView
+		android:id="@+id/list"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+	/>
+
+	<TextView
+	 	android:id="@android:id/empty"
+	 	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="No Data"
+	 />
+
+</LinearLayout>
